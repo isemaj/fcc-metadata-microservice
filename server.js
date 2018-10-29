@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
 
 const PORT = process.env.PORT || 9000;
 const app = express();
@@ -14,6 +16,13 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
+})
+
+app.post("/api/fileanalyse", upload.single("upfile"), (req, res, next) => {
+  res.json({
+    "name": req.file.originalname,
+    "size": req.file.size
+  })
 })
 
 // Error handling middleware
