@@ -34,25 +34,29 @@ a {
   font-weight: bold;
 }
 
-.post-button {
-  margin-top: 10px;
+.upload-button {
+  margin-top: 1.2em;
   font-size: 1em;
   font-weight: bold;
   color: #412d2d;
   background-color: #FF9800;
   border: none;
-  margin-left: 10px;
   height: 25px;
   border-bottom: 3.5px solid #b46b00;
   cursor: pointer;
 }
 
-.post-button:hover {
+.upload-button:hover {
   background-color: #ffba54;
 }
 
-.post-button:active {
+.upload-button:active {
   transform: translate(0px, 5px);
+}
+
+.file-button {
+  font-weight: bold;
+  background-color: #8080804d;
 }
 
 #url_input {
@@ -61,6 +65,7 @@ a {
   width: 10em;
 }
 
-span {
-  color: #ff9841;
+fieldset {
+  margin: 0 auto;
+  width: 40%;
 }
