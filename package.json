@@ -5,18 +5,10 @@
   "main": "server.js",
   "scripts": {
     "deploy": "node server.js",
-    "dev": "NODE_ENV=development nodemon server.js",
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/isemaj/fcc-metadata-microservice.git"
+    "dev": "NODE_ENV=development nodemon server.js"
   },
   "author": "James Itum",
   "license": "GPLv3",
-  "bugs": {
-    "url": "https://gitlab.com/isemaj/fcc-metadata-microservice/issues"
-  },
-  "homepage": "https://gitlab.com/isemaj/fcc-metadata-microservice#readme",
   "engines": {
     "node": "8.10.0"
   },
